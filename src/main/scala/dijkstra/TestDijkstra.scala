@@ -33,6 +33,11 @@ object TestDijkstra extends App {
 
     val path = sp.right.get.pathTo(6)
     assert(path.isRight)
+    println(path)
+
+    // Get sourceV to targetV distance 
+    val dist:Double = sp.right.get.distToV(6).right.get
+    println(dist)
 
     val actualPath = path.right.get
     println(actualPath)
